@@ -1,31 +1,63 @@
+/* All */
+
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
 }
 
-body {
-    height: 100vh;
-    min-height: 100%;
-    margin: 0;
-}
-
-a {
+a, p {
     text-decoration: none;
-    font-size: 13px;
+    color: rgba(0,0,0,0.87);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.87);
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
+    font-size: 13px;
 }
+
+#about-store-links {
+    font-size: 13px;
+}
+
+#about-store-links a {
+    padding: 0px 0px 0px 15px;
+}
+
+#account-links {
+    font-size: 13px;
+}
+
+#account-links a {
+    margin: 0px 0px 0px 15px;
+}
+
+#sign-in-link {
+    background-color:#4683ea;
+    justify-self: center;
+    align-self: center;
+    min-height: 30px;
+    min-width: 65px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+/* Main */
 
 #main {
     min-height: 100%;
-    margin: 0 auto;
+    min-width: 100%;
     display: grid;
     grid-template-rows: 300px 70px 70px 250px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -89,15 +121,29 @@ header {
     border: 1px solid black;
 }
 
+/* Footer */
+
 #footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    min-width: 100%;
+    font-size: 14px;
+    color: #70757a;
 }
 
 #footer-box {
     display: flex;
     justify-content: space-between;
     background-color: rgb(242 242 242);
-    font-size: 13.333333px;
+    padding: 14px 0px;
+    border-top: 1px solid rgb(222, 222, 222);
+}
+
+.footer-links {
+    padding: 0px 0px 0px 27px;
+}
+
+#settings-link {
+    margin-right: 27px;
 }
