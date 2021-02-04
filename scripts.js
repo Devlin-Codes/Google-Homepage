@@ -6,4 +6,4 @@ function fixPage() {
     main.style.height = (window.innerHeight - header.offsetHeight) - footer.offsetHeight + 'px';
 };
 
-document.addEventListener('DOMContentLoaded', fixPage);
+//document.addEventListener('DOMContentLoaded', fixPage);
