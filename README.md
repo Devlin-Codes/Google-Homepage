@@ -1,3 +1,0 @@
-#  Write a brief introduction for what the current project is and what skills you have demonstrated once you have completed it. (You can do this as a self-reflection at the end of the project which is a good way to review what you have learned.)
-
-This project will be a recreation of the Google homepage. I hope to demonstrate my ability to create a functioning webpage using HTML and CSS. I will use elegant code, semantic meaning, responsive web design, and more to recreate a good-looking site.
