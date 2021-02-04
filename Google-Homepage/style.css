@@ -18,6 +18,13 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-rows: 50px 1fr 40px;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
 
 a, p {
@@ -34,6 +41,7 @@ a:hover {
 
 header {
     display: flex;
+    grid-area: header;
     justify-content: space-between;
     padding: 20px 20px 0;
     font-size: 13px;
@@ -81,6 +89,7 @@ header {
     ". search-bar ."
     ". buttons .";
     justify-content: center;
+    grid-area: main;
 }
 
 #logo {
@@ -145,14 +154,21 @@ header {
     min-width: 100%;
     font-size: 14px;
     color: #70757a;
+    background-color: rgb(242 242 242);
+    grid-area: footer;
+    margin: 0;
+    padding: 0;
+    height: 40px;
 }
 
 #footer-box {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(242 242 242);
-    padding: 14px 0px;
+    padding: 0;
     border-top: 1px solid rgb(222, 222, 222);
+    height: 100%;
+    width: 100%;
+    align-items: center;
 }
 
 .footer-links {
